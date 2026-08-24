@@ -1,0 +1,15 @@
+[Unit]
+Description=Telegram word-dictionary bot
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/root/telegram-word-bot
+Environment=BOT_TOKEN=ВСТАВЬ_СВОЙ_ТОКЕН
+Environment=ALLOWED_USERS=id1,id2
+ExecStart=/usr/bin/python3 /root/telegram-word-bot/bot.py
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
