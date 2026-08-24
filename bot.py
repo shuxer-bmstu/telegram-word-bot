@@ -108,7 +108,7 @@ def format_words(rows) -> str:
 async def cmd_start(message: Message):
     is_allowed = message.from_user.id in ALLOWED_USERS
     text = (
-        "Привет! Я бот-словарь.\n\n"
+        "Привет! Я ТВАРЬ-СЛОВАРЬ.\n\n"
         "/list — посмотреть весь словарь\n"
         "/categories — посмотреть по диапазонам оценок"
     )
